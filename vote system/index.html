@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Monitor Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">Class Monitor Vote</h1>
+<h3>Total Votes: <span id="totalVotes">0</span></h3>
+
+<div class="form">
+    <label>Student Name:</label>
+    <input type="text" id="studentName">
+
+    <label>Choose Monitor:</label>
+    <select id="monitor">
+        <option value="Suresh">Rajeev</option>
+        <option value="Deepank">Raju</option>
+        <option value="Abhik">Ram</option>
+    </select>
+
+    <button onclick="addVote()">Vote</button>
+</div>
+
+<div class="candidates">
+
+<h2>Rajeev</h2>
+<p>Total <span id="sureshVotes">0</span></p>
+
+<h2>Raju</h2>
+<p>Total <span id="deepankVotes">0</span></p>
+
+<h2>Ram</h2>
+<p>Total <span id="abhikVotes">0</span></p>
+
+<button onclick="resetVotes()">Reset Votes</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
